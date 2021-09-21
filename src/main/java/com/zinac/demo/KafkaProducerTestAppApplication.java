@@ -19,7 +19,7 @@ public class KafkaProducerTestAppApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(KafkaProducerTestAppApplication.class, args);
-		
+		/*
 		new Thread(new Runnable(){
 			public void run() {
 				produceMessages();
@@ -30,11 +30,11 @@ public class KafkaProducerTestAppApplication {
 			public void run() {
 				consumeMessages();
 			}
-		}).start();
+		}).start();*/
 	}
 
 	
-	@Bean
+	/*@Bean
 	public CommandLineRunner commandLineRunner(ApplicationContext ctx) {
 		return args -> {
 
@@ -47,7 +47,7 @@ public class KafkaProducerTestAppApplication {
 			}
 
 		};
-	}
+	}*/
 	
 	public static void produceMessages() {
 		Properties config = new Properties();
@@ -62,7 +62,7 @@ public class KafkaProducerTestAppApplication {
 
 		while(true){
 			try{
-				Thread.sleep(500);
+				//Thread.sleep(1);
 				final String output = String.valueOf(i);
 				producer.send(
 				new ProducerRecord<String,String>(topic, "Test: "+i),

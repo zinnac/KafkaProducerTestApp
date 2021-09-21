@@ -12,7 +12,7 @@ import org.apache.kafka.clients.consumer.*;
 @RestController
 public class ConsumerController {
 
-	@GetMapping("/")
+	@GetMapping("/test")
 	public String index() {
 		return "Greetings from Spring Boot!";
 	}
