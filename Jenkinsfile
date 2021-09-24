@@ -15,7 +15,7 @@ pipeline {
                 maven 'maven-3.8.2'
             }
             steps {
-                sh './jenkins/scripts/deliver.sh'
+                sh 'mvn package'
             }
         }
     }
