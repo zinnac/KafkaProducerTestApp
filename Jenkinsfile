@@ -57,7 +57,7 @@ pipeline {
                             artifacts: [
                                 // Artifact generated such as .jar, .ear and .war files.
                                 [artifactId: pom.artifactId,
-                                classifier: '',
+                                classifier: '-SNAPSHOT',
                                 file: artifactPath,
                                 type: pom.packaging]//,
 
