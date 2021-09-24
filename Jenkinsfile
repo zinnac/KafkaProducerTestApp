@@ -57,7 +57,7 @@ pipeline {
                             artifacts: [
                                 // Artifact generated such as .jar, .ear and .war files.
                                 [artifactId: 'JavaWebServices',
-                                classifier: '-SNAPSHOT',
+                                classifier: 'SNAPSHOT',
                                 file: artifactPath,
                                 type: 'jar']
                             ]
