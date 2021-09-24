@@ -56,7 +56,7 @@ pipeline {
                             credentialsId: NEXUS_CREDENTIAL_ID,
                             artifacts: [
                                 // Artifact generated such as .jar, .ear and .war files.
-                                [artifactId: JavaWebServices,
+                                [artifactId: 'JavaWebServices',
                                 classifier: '-SNAPSHOT',
                                 file: artifactPath,
                                 type: 'jar']
