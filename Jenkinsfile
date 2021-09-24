@@ -69,5 +69,6 @@ pipeline {
                 }
             }
     }
+	stage("Clean workspace"){cleanWs()}
 }
 }
