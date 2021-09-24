@@ -58,9 +58,9 @@ pipeline {
                                 // Artifact generated such as .jar, .ear and .war files.
                                 [artifactId: pom.artifactId,
                                 classifier: '-SNAPSHOT',
-                                file: artifactPath,
-                                //type: pom.packaging]//,
-
+                                file: artifactPath//,
+                                // pom.packaging
+								],
                                 // Lets upload the pom.xml file for additional information for Transitive dependencies
                                 //[artifactId: pom.artifactId,
                                 //classifier: '',
